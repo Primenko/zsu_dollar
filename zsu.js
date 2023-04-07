@@ -1,1 +1,3 @@
 (()=>{let e;const t=e=>{e.classList.remove("copied")};(()=>{const c=document.getElementById("card-number-block");c.onclick=(()=>{(c=>{clearTimeout(e),c.classList.add("copied");const a=document.getElementById("card-number").innerText.replaceAll(/\s/g,"");navigator.clipboard.writeText(a),navigator.vibrate&&navigator.vibrate(50),e=setTimeout(()=>{t(c)},1e4)})(c)})})()})();
+
+(()=>{let e2;const t2=e2=>{e2.classList.remove("copied-2")};(()=>{const c2=document.getElementById("card-number-block-2");c2.onclick=(()=>{(c2=>{clearTimeout(e2),c2.classList.add("copied-2");const a2=document.getElementById("card-number-2").innerText.replaceAll(/\s/g,"");navigator.clipboard.writeText(a2),navigator.vibrate&&navigator.vibrate(50),e2=setTimeout(()=>{t2(c2)},1e4)})(c2)})})()})();

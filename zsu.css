@@ -151,35 +151,35 @@ body {
     max-width: 100%;
 }
 
-.card-number-block:hover {
+.card-number-block:hover, .card-number-block-2:hover {
     cursor: pointer;
 }
 
-.card-number-block.copied #copied-description {
+.card-number-block.copied #copied-description, .card-number-block-2.copied-2 #copied-description-2 {
     display: block;
 }
 
-.card-number-block.copied #copy-suggestion {
+.card-number-block.copied #copy-suggestion, .card-number-block-2.copied-2 #copy-suggestion-2 {
     display: none;
 }
 
-.number-description {
+.number-description, .number-description-2 {
     font-size: 1rem;
     padding-bottom: 0.5rem;
     line-height: 1.4;
 }
 
-#copied-description {
+#copied-description, #copied-description-2 {
     display: none;
 }
 
-.card-number {
+.card-number, .card-number-2 {
     font-size: 1.75rem;
     font-weight: bold;
     padding: 0.5rem 0;
 }
 
-.card-number::after {
+.card-number::after, .card-number-2::after {
     content: "";
     background-image: url(img/copy-text.svg);
     width: 16px;
@@ -187,12 +187,12 @@ body {
     display: inline-block;
 }
 
-.card-number-block:not(:active) .card-number {
+.card-number-block:not(:active) .card-number, .card-number-block-2:not(:active) .card-number-2 {
     transition-property: color, text-shadow;
     transition-duration: 2s;
 }
 
-.card-number-block:active .card-number {
+.card-number-block:active .card-number , .card-number-block-2:active .card-number-2 {
     color: #c22d00;
     text-shadow: 0 0 5px #e74100;
 }
